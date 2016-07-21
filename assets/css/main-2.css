@@ -1,6 +1,6 @@
 .header {
-    background: url('../images/treize-en-danse-2.png') no-repeat top;
-    height: 430px;
+    background: url('../images/danseuse.png') #FFFFF0 no-repeat 90% 0%;
+    height: 390px;
 }
 .header h1 {
     /*color: #fff;*/
