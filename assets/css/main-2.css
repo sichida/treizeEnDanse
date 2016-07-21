@@ -1,20 +1,25 @@
+html, body {
+    /*background-color: #FEFDF0;*/
+}
+
 .header {
-    background: url('../images/danseuse.png') #FFFFF0 no-repeat 90% 0%;
+    background: url('../images/danseuse.png') no-repeat 90% 0%; /* #FFFFF0 */
     height: 390px;
 }
 .header h1 {
-    /*color: #fff;*/
-    padding-top: 40px;
+    padding-top: 80px;
 }
-.header h2 {
-    /*color: #ffe;*/
+.navbar-custom {
+    /*background-color: #F5F5DC;*/
+    /*border-color: #e7e7e7;*/
 }
-.menu {
-    /*background-color: #000;*/
-    /*color: #fff;*/
+.menu .navbar-custom .navbar-nav>.active>a,
+.menu .navbar-custom .navbar-nav>.active>a:focus, 
+.menu .navbar-custom .navbar-nav>.active>a:hover,
+.menu .nav>li>a:focus, .menu .nav>li>a:hover{
+    /*color: #555;*/
+    /*background-color: #FDE9E0;*/
 }
-.menu .col-xs-4 {
-    height: 30px;
-    line-height: 30px;
-    vertical-align: middle;
+.container {
+    padding-bottom: 50px;
 }

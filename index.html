@@ -11,25 +11,101 @@
     <link rel="stylesheet" href="assets/css/main-2.css">
     <!--<link rel="stylesheet" href="assets/css/main.css">-->
 <body>
-    <section class="container-fluid">
-        <section class="header row">
+    <section class="container">
+        <section class="header">
             <article class="row">
-                <h1 class="hidden-xs col-sm-6 col-md-4 col-sm-offset-2">Treize en Danse</h1>
+                <h1 class="hidden-xs col-sm-6 col-md-4">Treize en Danse</h1>
             </article>
             <article class="row">
-                <h2 class="hidden-xs col-sm-6 col-md-4 col-sm-offset-2">&Eacute;cole de danse de Clothilde Kieffert</h1>
+                <h2 class="hidden-xs col-sm-6 col-md-4">&Eacute;cole de danse de Clothilde Kieffert</h1>
             </article>
         </section>
-        <section class="menu row text-center">
-            <article class="col-xs-4">Accueil</article>
-            <article class="col-xs-4">M&eacute;dia</article>
-            <article class="col-xs-4">Infos pratiques</article>
+        <section class="menu row">
+            <section class="col-xs-12">
+                <nav class="navbar navbar-default navbar-custom">
+                  <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#">Brand</a>
+                    </div>
+                
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Accueil</a></li>
+                        <li><a href="#">M&eacute;dias</a></li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Infos pratiques <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Acc&egrave;s</a></li>
+                            <li><a href="#">Horaires</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Liens utils</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <!--<form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                      </form>
+                      <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Link</a></li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                          </ul>
+                        </li>
+                      </ul>-->
+                    </div><!-- /.navbar-collapse -->
+                  </div><!-- /.container-fluid -->
+                </nav>
+            </section>
         </section>
-        <section>
-
+        <section class="content">
+            <section class="col-xs-12 col-md-8">
+                <section class="row">
+                    <article class="col-xs-12">
+                        <h3>Bienvenue</h3>
+                        <p>Clothilde Kieffert vous accueille dans son &eacute;cole de danse du XIII&egrave;me arrondissement de Paris.</p>
+                        <p>Nos cours de danse classique et modern jazz s'adressent à tout public du débutant au confirmé. Les niveaux sont définis par le professeur après observation de l'élève. Les enfants des 3 ans sont les bienvenus. Ceux-ci sont répartis par petits groupes afin de faciliter l'apprentissage. L'école est ouverte du lundi au samedi.</p>
+                    </article>
+                </section>
+                <article class="row">
+                    <img src="assets/images/treize-en-danse.png" class="col-xs-12"></img>
+                </article>
+                <section class="row">
+                    <article class="col-xs-12">
+                        <p>Retrouvez toutes les informations pratiques de l'&eacute;colde dans les sections du site.</p>
+                    </article>
+                </section>
+            </section>
+            <section class="hidden-xs col-md-4">
+                <article class="col-xs-12">
+                    <h4>Derni&egrave;res actualit&eacute;s</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum quam quis mi porttitor suscipit. Aliquam erat volutpat. Duis mi est, venenatis eget tortor vitae, condimentum suscipit nibh. Duis libero nulla, luctus non velit quis, tincidunt fringilla nulla.</p>
+                </article>
+                <article class="col-xs-12">
+                    <h4>La vie de l'&eacute;cole</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum quam quis mi porttitor suscipit. Aliquam erat volutpat. Duis mi est, venenatis eget tortor vitae, condimentum suscipit nibh. Duis libero nulla, luctus non velit quis, tincidunt fringilla nulla.</p>
+                </article>
+            </section>
         </section>
-    </section>    
+    </section>
     <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script></head>
 </body>
 </html>
