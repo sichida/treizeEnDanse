@@ -23,3 +23,11 @@ html, body {
 .container {
     padding-bottom: 50px;
 }
+
+.image img {
+    height: 300px;
+}
+.media-caroussel .slick-next:before, .media-caroussel .slick-prev:before {
+    opacity: .25;
+    color: #000;
+}
