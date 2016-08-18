@@ -1,0 +1,249 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: hsl(182, 25%, 80%);
+    margin: 0;
+}
+
+body.--bruno {
+    background-color: hsl(255, 25%, 80%);
+}
+
+
+
+
+/******************************************
+    LAYOUT AND STYLES
+ ******************************************/
+
+
+.global-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, sans-serif;
+    align-items: stretch;
+}
+
+
+
+.persona-header {
+    padding: 2em 2em 1em;
+    flex-shrink: 0;
+    background-color: hsl(182, 25%, 50%);
+}
+
+    .--bruno .persona-header {
+        background-color: hsl(255, 25%, 50%);
+        margin: 0;
+    }
+
+
+    .persona-header-name {
+        margin: 0;
+        padding: 0.2em 0 0;
+        text-align: center;
+        color: white;
+        font-family: 'Dancing Script', cursive;
+        font-size: 3.5em;
+    }
+
+
+    .persona-header-picture {
+        margin: auto;
+    }
+    
+    .persona-header-persona-link {
+        transform: scale(0.5);
+        position: absolute;
+        top: -25px;
+        right: -25px;
+    }
+        
+   
+        
+.persona-container {
+    flex-grow: 1;
+    max-width: 900px;	
+    width: 95%;	
+    margin: auto;
+    padding-bottom: 1em;
+}
+
+    .persona-container-description {
+        margin: 0.8em 0;
+        font-size: 1.3em;
+        text-align: center;
+    }
+    
+    .persona-container-panel-item {
+        flex-grow: 1;
+    }
+                
+            
+
+.persona-footer {
+    flex-shrink: 0;
+    padding: 0.5em 0;
+    background-color: hsl(182, 25%, 40%);
+    text-align: center;
+    color: #ddd;
+}
+
+    .--bruno .persona-footer {
+        background-color: hsl(255, 25%, 40%);
+    }
+
+
+
+
+/******************************************
+    GENERIC ELEMENTS
+ ******************************************/
+
+
+.persona-picture {
+    display: block; 
+    width: 200px;
+    height: 200px;
+    -webkit-clip-path: circle(100px at 50% 50%);
+    clip: circle(100px at 100px at 50% 50%);
+}
+
+    .persona-picture--alice {
+        background: url('../images/alice.jpg') no-repeat 40% 0%;
+        background-size: 160%;
+    }
+
+    .persona-picture--faded {
+        opacity: 0.65;
+    }
+        .persona-picture--faded:hover, 
+        .persona-picture--faded:focus {
+            opacity: 1;
+        }
+
+
+         
+.panel {
+    background-color: hsl(182, 25%, 90%);
+    padding: 0.5em;
+}
+
+    .--bruno .panel {
+        background-color: hsl(255, 25%, 90%);
+    }
+
+    .panel-title {
+        margin: 0 0 0.5em;
+        text-align: center;
+        font-size: 1.6em;
+        font-family: 'Dancing script', serif;
+    }
+
+
+
+.definition-list {
+    overflow: auto;
+    width: 95%;
+    margin: auto;
+}
+
+    .definition-list-item,
+    .definition-list-definition {
+        padding: 0.5em 0;
+        border-top: 1px solid #bbb;
+    }
+    .definition-list-item:last-of-type,
+    .definition-list-definition:last-child {
+        border-bottom: 1px solid #bbb;
+    }
+
+    .definition-list-item {
+        float: left;
+        width: 40%;
+        text-align: right;
+        padding-right: 3%;
+        font-weight: bold;
+    }    
+
+        .definition-list-item::after {
+            content: ':\a0';
+        }
+
+
+    .definition-list-definition {
+        float: left;
+        width: 60%;
+    }
+    
+ @media (min-width: 40em) {
+    .definition-list {
+        width: 80%;
+    }
+ }   
+ 
+    
+    
+    
+/******************************************
+    INDEX SPECIFIC
+ ******************************************/
+ 
+.global-container--index {
+    width: 100%;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    background: #e60028; /* Old browsers */
+    background: -moz-linear-gradient(top, #e60028 0%, #e60028 50%, #000000 50%, #000000 100%, #7db9e8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #e60028 0%,#e60028 50%,#000000 50%,#000000 100%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #e60028 0%,#e60028 50%,#000000 50%,#000000 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e60028', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+    height: 100%;
+}
+
+    .global-container--index::before {
+        content: '';
+        display: block;
+        width: 60%;
+        height: 6%;
+        position: absolute;
+        top: 50%;
+        left: 50%;      
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        background: white;
+    }
+    
+    
+    
+    
+/******************************************
+    SIMPLE GRID SYSTEM
+ ******************************************/
+
+
+.grid {
+    display: flex;
+    flex: 0 0 100%;
+    margin: 0 0 2em -1em;
+    flex-wrap: wrap;
+}
+
+.grid-cell {
+    flex: 0 0 calc(100% - 1em);
+    margin: 1em 0 0 1em;
+}
+
+
+/*@media (min-width: 40em) {*/
+    /*.grid--2 > .grid-cell {*/
+        /*flex: 0 0 calc(50% - 1em);*/
+    /*}*/
+/*}*/
