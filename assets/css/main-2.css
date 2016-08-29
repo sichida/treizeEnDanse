@@ -3,8 +3,8 @@ html, body {
 }
 
 .header {
-    background: url('../images/danseuse.png') no-repeat 90% 0%; /* #FFFFF0 */
-    height: 390px;
+    background: url('../images/chausson-danse.png') no-repeat 90% 0%; /* #FFFFF0 */
+    height: 240px;
 }
 .header h1 {
     padding-top: 80px;
@@ -12,6 +12,9 @@ html, body {
 .navbar-custom {
     /*background-color: #F5F5DC;*/
     /*border-color: #e7e7e7;*/
+}
+.navbar-brand {
+    padding: 0px 15px;
 }
 .menu .navbar-custom .navbar-nav>.active>a,
 .menu .navbar-custom .navbar-nav>.active>a:focus, 
@@ -25,7 +28,7 @@ html, body {
 }
 
 .image img {
-    height: 300px;
+    height: 600px;
 }
 .media-caroussel .slick-next:before, .media-caroussel .slick-prev:before {
     opacity: .25;
