@@ -34,3 +34,8 @@ html, body {
     opacity: .25;
     color: #000;
 }
+
+.course {
+    background-color: #FFFFF0;
+    /*color: #f5f5f5;*/
+}
