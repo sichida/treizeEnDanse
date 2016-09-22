@@ -4,18 +4,18 @@
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-            aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                      </button>
-          <a class="navbar-brand" href routerLink="/accueil"><img src="assets/images/9-EDD-LOGO-13enDanse.png" alt="Treize en Danse"></a>
+          <div class="visible-xs-inline xs-logo"><img class="menu-logo" src="/assets/images/treize-en-danse-logo.png" alt="Treize en Danse"></div>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-links" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!--<a class="navbar-brand" href routerLink="/accueil"></a>-->
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="menu-links">
           <ul class="nav navbar-nav">
             <li [routerLinkActive]="['active']"><a href routerLink="/accueil">Accueil</a></li>
             <li [routerLinkActive]="['active']"><a href routerLink="/comment-venir">Acc&egrave;s</a></li>

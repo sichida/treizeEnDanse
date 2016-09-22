@@ -1,5 +1,5 @@
 <section class="row">
   <article class="col-xs-12">
-    <p>Retrouvez-nous sur Facebook sur <a href="https://www.facebook.com/TreizeEnDanse/">notre page d&eacute;di&eacute;e &agrave; l'&eacute;cole</a>.</p>
+    <p *ngFor="let link of links" [innerHTML]="link.description"></p>
   </article>
 </section>
