@@ -1,0 +1,7 @@
+.header {
+    background: url('/assets/images/chausson-danse.png') no-repeat 90% 0%; /* #FFFFF0 */
+    height: 240px;
+}
+.header h1 {
+    padding-top: 80px;
+}
