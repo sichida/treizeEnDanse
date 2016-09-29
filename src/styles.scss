@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'MarkMyWords'; /*a name to be used later*/
+    src: url('/assets/fonts/mark-my-words/mark_my_words.ttf'); /*URL to font*/
+}
 
 .treize-en-danse {
     background-color: #FFF0F5;
@@ -23,5 +27,9 @@
         float: none;
         margin: 0 auto;
         text-align: center;
+    }
+
+    h1, h2, h3, h4, .mark-my-words {
+        font-family: 'MarkMyWords';
     }
 }

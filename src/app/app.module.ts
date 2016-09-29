@@ -14,6 +14,7 @@ import { PlanningCmpComponent } from './planning-cmp/planning-cmp.component';
 import { LinksCmpComponent } from './links-cmp/links-cmp.component';
 import { AccessCmpComponent } from './access-cmp/access-cmp.component';
 import { ProfileCmpComponent } from './profile-cmp/profile-cmp.component';
+import { VieEcoleCmpComponent } from './vie-ecole-cmp/vie-ecole-cmp.component';
 
 @NgModule({
   declarations: [
@@ -25,13 +26,14 @@ import { ProfileCmpComponent } from './profile-cmp/profile-cmp.component';
     PlanningCmpComponent,
     LinksCmpComponent,
     AccessCmpComponent,
-    ProfileCmpComponent
+    ProfileCmpComponent,
+    VieEcoleCmpComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES, { useHash: true })
   ],
   providers: [],
   bootstrap: [AppComponent]

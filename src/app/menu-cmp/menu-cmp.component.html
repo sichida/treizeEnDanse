@@ -4,7 +4,7 @@
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <div class="visible-xs-inline xs-logo"><img class="menu-logo" src="/assets/images/treize-en-danse-logo.png" alt="Treize en Danse"></div>
+          <div class="visible-xs-inline xs-logo"><img class="menu-logo" src="/assets/images/treize-en-danse-logo-responsive.png" alt="Treize en Danse"></div>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-links" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -17,10 +17,11 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="menu-links">
           <ul class="nav navbar-nav">
-            <li [routerLinkActive]="['active']"><a href routerLink="/accueil"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-            <li [routerLinkActive]="['active']"><a href routerLink="/comment-venir">Acc&egrave;s</a></li>
-            <li [routerLinkActive]="['active']"><a href routerLink="/planning">Horaires</a></li>
-            <li [routerLinkActive]="['active']"><a href routerLink="/liens">Liens utiles</a></li>
+            <li [routerLinkActive]="['active']"><a href [routerLink]="['accueil']"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+            <li [routerLinkActive]="['active']"><a href [routerLink]="['la-vie-de-l-ecole']">La vie de l'&eacute;cole</a></li>
+            <li [routerLinkActive]="['active']"><a href [routerLink]="['comment-venir']">Contact & Acc&egrave;s</a></li>
+            <li [routerLinkActive]="['active']"><a href [routerLink]="['planning']">Horaires</a></li>
+            <li [routerLinkActive]="['active']"><a href [routerLink]="['liens']">Liens utiles</a></li>
             <!--<li [routerLinkActive]="['active']"><a href routerLink="/medias">M&eacute;dias</a></li>-->
             <!--<li class="dropdown">
                           <a href="#" class="dropdown-toggle"

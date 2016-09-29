@@ -5,10 +5,12 @@ import { PlanningCmpComponent } from './planning-cmp/planning-cmp.component';
 import { LinksCmpComponent } from './links-cmp/links-cmp.component';
 import { AccessCmpComponent } from './access-cmp/access-cmp.component';
 import { ProfileCmpComponent } from './profile-cmp/profile-cmp.component';
+import { VieEcoleCmpComponent } from './vie-ecole-cmp/vie-ecole-cmp.component';
 
 export const ROUTES: Routes = [
     { path: '', component: HomeCmpComponent },
     { path: 'accueil', component: HomeCmpComponent },
+    { path: 'la-vie-de-l-ecole', component: VieEcoleCmpComponent },
     { path: 'medias', component: MediaCmpComponent },
     { path: 'planning', component: PlanningCmpComponent },
     { path: 'liens', component: LinksCmpComponent },
