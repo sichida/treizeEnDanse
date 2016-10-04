@@ -5,6 +5,8 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
 
+import { FacebookService } from './facebook.service';
+
 import { AppComponent } from './app.component';
 import { HeaderCmpComponent } from './header-cmp/header-cmp.component';
 import { MenuCmpComponent } from './menu-cmp/menu-cmp.component';
@@ -15,6 +17,7 @@ import { LinksCmpComponent } from './links-cmp/links-cmp.component';
 import { AccessCmpComponent } from './access-cmp/access-cmp.component';
 import { ProfileCmpComponent } from './profile-cmp/profile-cmp.component';
 import { VieEcoleCmpComponent } from './vie-ecole-cmp/vie-ecole-cmp.component';
+import { FacebookCmpComponent } from './facebook-cmp/facebook-cmp.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,8 @@ import { VieEcoleCmpComponent } from './vie-ecole-cmp/vie-ecole-cmp.component';
     LinksCmpComponent,
     AccessCmpComponent,
     ProfileCmpComponent,
-    VieEcoleCmpComponent
+    VieEcoleCmpComponent,
+    FacebookCmpComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +39,7 @@ import { VieEcoleCmpComponent } from './vie-ecole-cmp/vie-ecole-cmp.component';
     HttpModule,
     RouterModule.forRoot(ROUTES, { useHash: true })
   ],
-  providers: [],
+  providers: [FacebookService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
