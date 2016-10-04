@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
 
 import { FacebookService } from './facebook.service';
+import { MediaService } from './media.service';
 
 import { AppComponent } from './app.component';
 import { HeaderCmpComponent } from './header-cmp/header-cmp.component';
@@ -18,6 +19,7 @@ import { AccessCmpComponent } from './access-cmp/access-cmp.component';
 import { ProfileCmpComponent } from './profile-cmp/profile-cmp.component';
 import { VieEcoleCmpComponent } from './vie-ecole-cmp/vie-ecole-cmp.component';
 import { FacebookCmpComponent } from './facebook-cmp/facebook-cmp.component';
+import { MediaListComponent } from './media-list/media-list.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { FacebookCmpComponent } from './facebook-cmp/facebook-cmp.component';
     AccessCmpComponent,
     ProfileCmpComponent,
     VieEcoleCmpComponent,
-    FacebookCmpComponent
+    FacebookCmpComponent,
+    MediaListComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,7 @@ import { FacebookCmpComponent } from './facebook-cmp/facebook-cmp.component';
     HttpModule,
     RouterModule.forRoot(ROUTES, { useHash: true })
   ],
-  providers: [FacebookService],
+  providers: [FacebookService, MediaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
