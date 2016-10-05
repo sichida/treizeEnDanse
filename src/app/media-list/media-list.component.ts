@@ -33,4 +33,7 @@ export class MediaListComponent implements OnInit, OnDestroy {
         window.clearInterval(this.loopId);
     }
 
+    selectMedia(media:Media) {
+        this.currentImageIndex = this.medias.indexOf(media);
+    }
 }

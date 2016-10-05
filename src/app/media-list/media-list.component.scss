@@ -1,0 +1,17 @@
+.miniatures {
+  display: block;
+  overflow-x: scroll;
+  white-space: nowrap;
+  .miniature {
+    display: table-cell;
+    padding-right: 2px;
+    img {
+      max-width: 150px;
+      max-height: 150px;
+    }
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}

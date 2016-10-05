@@ -5,4 +5,5 @@
 export class Media {
     title: string;
     link: string;
+    thumb:string;
 }
