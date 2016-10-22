@@ -12,9 +12,8 @@ export class LinksCmpComponent implements OnInit {
 
   ngOnInit() {
     this.links.push(new Link(`
-    Retrouvez notre actualit&eacute; sur Facebook sur
-    <a href="https://www.facebook.com/TreizeEnDanse/">notre page</a>
-    d&eacute;di&eacute;e &agrave; l'&eacute;cole.`))
+    Retrouvez notre actualit&eacute; sur <a href="https://www.facebook.com/TreizeEnDanse/" target="_blank">notre page</a>
+    Facebook d&eacute;di&eacute;e &agrave; l'&eacute;cole.`))
   }
 
 }

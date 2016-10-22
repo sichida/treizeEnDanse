@@ -17,23 +17,23 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="menu-links">
           <ul class="nav navbar-nav">
-            <li [routerLinkActive]="['active']"><a href [routerLink]="['accueil']"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-            <li [routerLinkActive]="['active']"><a href [routerLink]="['la-vie-de-l-ecole']">La vie de l'&eacute;cole</a></li>
-            <li [routerLinkActive]="['active']"><a href [routerLink]="['comment-venir']">Contact & Acc&egrave;s</a></li>
-            <li [routerLinkActive]="['active']"><a href [routerLink]="['planning']">Horaires</a></li>
-            <li [routerLinkActive]="['active']"><a href [routerLink]="['medias']">L'&eacute;cole en images</a></li>
-            <li [routerLinkActive]="['active']"><a href [routerLink]="['liens']">Liens utiles</a></li>
-            <!--<li class="dropdown">
-                          <a href="#" class="dropdown-toggle"
-                             data-toggle="dropdown" role="button"
-                             aria-haspopup="true" aria-expanded="false">Informations pratiques <span class="caret"></span></a>
-                          <ul class="dropdown-menu">
-                            <li><a href="/access.html">Acc&egrave;s</a></li>
-                            <li><a href="/planning.html">Horaires</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="/links.html">Liens utiles</a></li>
-                          </ul>
-                        </li>-->
+            <li [routerLinkActive]="['active']"><a href data-toggle="collapse" data-target=".navbar-collapse.in" [routerLink]="['accueil']"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+            <li [routerLinkActive]="['active']"><a href data-toggle="collapse" data-target=".navbar-collapse.in" [routerLink]="['la-vie-de-l-ecole']">La vie de l'&eacute;cole</a></li>
+            <li [routerLinkActive]="['active']"><a href data-toggle="collapse" data-target=".navbar-collapse.in" [routerLink]="['clothilde-kieffert']">Clothilde Kieffert</a></li>
+            <li [routerLinkActive]="['active']"><a href data-toggle="collapse" data-target=".navbar-collapse.in" [routerLink]="['comment-venir']">Contact & Acc&egrave;s</a></li>
+            <li [routerLinkActive]="['active']" class="hidden-sm"><a href data-toggle="collapse" data-target=".navbar-collapse.in" [routerLink]="['planning']">Horaires</a></li>
+            <li [routerLinkActive]="['active']" class="hidden-sm"><a href data-toggle="collapse" data-target=".navbar-collapse.in" [routerLink]="['medias']">L'&eacute;cole en images</a></li>
+            <li [routerLinkActive]="['active']" class="hidden-sm"><a href data-toggle="collapse" data-target=".navbar-collapse.in" [routerLink]="['liens']">Liens utiles</a></li>
+            <li class="dropdown" class="visible-sm-block">
+              <a href="#" class="dropdown-toggle"
+                 data-toggle="dropdown" role="button"
+                 aria-haspopup="true" aria-expanded="false">Plus d'informations <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li [routerLinkActive]="['active']"><a href [routerLink]="['planning']">Horaires</a></li>
+                <li [routerLinkActive]="['active']"><a href [routerLink]="['medias']">L'&eacute;cole en images</a></li>
+                <li [routerLinkActive]="['active']"><a href [routerLink]="['liens']">Liens utiles</a></li>
+              </ul>
+            </li>
           </ul>
           <!--<form class="navbar-form navbar-left" role="search">
                         <div class="form-group">

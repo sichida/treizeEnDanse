@@ -12,20 +12,21 @@ export class MediaListComponent implements OnInit, OnDestroy {
     currentImageIndex: number = 0;
     loopId: number;
     playing: boolean = true;
+    private selectionChanged: boolean = true;
 
-    constructor(private _mediaService: MediaService) {
-    }
+    constructor(private _mediaService: MediaService) { }
 
     ngOnInit() {
         this.medias = this._mediaService.medias;
         this.loopId = window.setInterval(() => {
-            if (this.playing) {
+            if (this.playing && !this.selectionChanged) {
                 if (this.currentImageIndex < this.medias.length - 1) {
                     this.currentImageIndex++;
                 } else {
                     this.currentImageIndex = 0;
                 }
             }
+            this.selectionChanged = false;
         }, 3000);
     }
 
@@ -35,5 +36,6 @@ export class MediaListComponent implements OnInit, OnDestroy {
 
     selectMedia(media:Media) {
         this.currentImageIndex = this.medias.indexOf(media);
+        this.selectionChanged = true;
     }
 }
