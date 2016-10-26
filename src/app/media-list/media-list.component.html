@@ -1,0 +1,15 @@
+<section class="col-xs-12">
+    <h3>Decrouvez l'&eacute;cole en image</h3>
+    <app-media-cmp [src]="medias[currentImageIndex].link" [title]="medias[currentImageIndex].title"></app-media-cmp>
+    <section class="control centered">
+        <button class="btn btn-link" (click)="playing = !playing" [ngSwitch]="playing">
+            <span *ngSwitchCase="true"><i class="fa fa-pause" aria-hidden="true"></i></span>
+            <span *ngSwitchCase="false"><i class="fa fa-play" aria-hidden="true"></i></span>
+        </button>
+    </section>
+    <div class="miniatures">
+        <article class="miniature pointer" *ngFor="let media of medias">
+            <img [src]="media.thumb" (click)="selectMedia(media)">
+        </article>
+    </div>
+</section>
