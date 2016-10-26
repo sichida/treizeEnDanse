@@ -29,20 +29,6 @@ export class FacebookCmpComponent implements OnInit {
     };
 
     // Setup the post-load callback
-    window.fbAsyncInit = function() {
-      this._facebookService._init(fb_params);
-
-      // if('fbInit' in iAttrs) {
-      //   iAttrs.fbInit();
-      // }
-    }.bind(this);
-
-    (function(d, s, id, fbAppId) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id; js.async = true;
-      js.src = "//connect.facebook.net/en_US/all.js";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk', fbAppId));
+    this._facebookService._init(fbAppId, fb_params);
   }
 }
