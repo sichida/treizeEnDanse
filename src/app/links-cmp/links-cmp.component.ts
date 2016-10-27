@@ -18,6 +18,6 @@ export class LinksCmpComponent implements OnInit {
 
 }
 
-class Link {
+export class Link {
   constructor(public description:string) { }
 }
