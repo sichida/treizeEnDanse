@@ -5,8 +5,8 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
 
-import { FacebookService } from './facebook.service';
-import { MediaService } from './media.service';
+import { FacebookService } from './services/facebook.service';
+import { MediaService } from './services/media.service';
 
 import { AppComponent } from './app.component';
 import { HeaderCmpComponent } from './header-cmp/header-cmp.component';
