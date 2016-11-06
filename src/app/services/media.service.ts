@@ -25,7 +25,11 @@ export class MediaService {
         {title: '', link: 'assets/images/gallery/19-gallery.jpg', thumb: 'assets/images/gallery/thumb/19-gallery.jpg'},
         {title: '', link: 'assets/images/gallery/20-gallery.jpg', thumb: 'assets/images/gallery/thumb/20-gallery.jpg'},
         {title: '', link: 'assets/images/gallery/21-gallery.jpg', thumb: 'assets/images/gallery/thumb/21-gallery.jpg'},
-        {title: '', link: 'assets/images/gallery/22-gallery.jpg', thumb: 'assets/images/gallery/thumb/22-gallery.jpg'}
+        {title: '', link: 'assets/images/gallery/22-gallery.jpg', thumb: 'assets/images/gallery/thumb/22-gallery.jpg'},
+        {title: '', link: 'assets/images/gallery/23-gallery.jpg', thumb: 'assets/images/gallery/thumb/23-gallery.jpg'},
+        {title: '', link: 'assets/images/gallery/24-gallery.jpg', thumb: 'assets/images/gallery/thumb/24-gallery.jpg'},
+        {title: '', link: 'assets/images/gallery/25-gallery.jpg', thumb: 'assets/images/gallery/thumb/25-gallery.jpg'},
+        {title: '', link: 'assets/images/gallery/26-gallery.jpg', thumb: 'assets/images/gallery/thumb/26-gallery.jpg'}
     ];
 
     constructor() {
