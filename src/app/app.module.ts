@@ -20,6 +20,7 @@ import { ProfileCmpComponent } from './profile-cmp/profile-cmp.component';
 import { VieEcoleCmpComponent } from './vie-ecole-cmp/vie-ecole-cmp.component';
 import { FacebookCmpComponent } from './facebook-cmp/facebook-cmp.component';
 import { MediaListComponent } from './media-list/media-list.component';
+import { InfosComponent } from './infos/infos.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { MediaListComponent } from './media-list/media-list.component';
     ProfileCmpComponent,
     VieEcoleCmpComponent,
     FacebookCmpComponent,
-    MediaListComponent
+    MediaListComponent,
+    InfosComponent
   ],
   imports: [
     BrowserModule,
@@ -45,4 +47,5 @@ import { MediaListComponent } from './media-list/media-list.component';
   providers: [FacebookService, MediaService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

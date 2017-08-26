@@ -1,40 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
-    font-family: 'MarkMyWords'; /*a name to be used later*/
-    src: url('/assets/fonts/mark-my-words/mark_my_words.ttf'); /*URL to font*/
+  font-family: 'MarkMyWords'; /*a name to be used later*/
+  src: url('/assets/fonts/mark-my-words/mark_my_words.ttf'); /*URL to font*/
 }
 
 .treize-en-danse {
-    background-color: #FFF0F5;
+  background-color: #FFF0F5;
 
-    .navbar-default {
-        background-color: #997A8D;
-        border-color: #e7e7e7;
+  .navbar-default {
+    background-color: #997A8D;
+    border-color: #e7e7e7;
 
-        .navbar-nav > li > a {
-            color: #FFE4E1;
-        }
-
-        .navbar-nav > .active > a,
-        .navbar-nav > .active > a:hover,
-        .navbar-nav > .active > a:focus,
-        .dropdown-menu {
-            color: #997A8D;
-            background-color: #FFE4E1;
-        }
+    .navbar-nav > li > a {
+      color: #FFE4E1;
     }
 
-    .centered {
-        float: none;
-        margin: 0 auto;
-        text-align: center;
+    .navbar-nav > .active > a,
+    .navbar-nav > .active > a:hover,
+    .navbar-nav > .active > a:focus,
+    .dropdown-menu {
+      color: #997A8D;
+      background-color: #FFE4E1;
     }
+  }
 
-    .justify {
-      text-align: justify;
-    }
+  .centered {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+  }
 
-    h1, h2, h3, h4, .mark-my-words {
-        font-family: 'MarkMyWords';
-    }
+  .justify {
+    text-align: justify;
+  }
+
+  h1, h2, h3, h4, .mark-my-words {
+    font-family: 'MarkMyWords';
+  }
+
+  ul[_ngcontent-c3], li {
+    list-style-type: circle;
+  }
 }
