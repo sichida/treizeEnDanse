@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>fr.ichida</groupId>
+  <artifactId>treize-en-danse-frontend</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>TreizeEnDanse :: Frontend</name>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>${basedir}/dist</directory>
+      </resource>
+      <resource>
+        <directory>${basedir}/node_modules/webpack-dev-server/bin</directory>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.3.2</version>
+        <executions>
+          <execution>
+            <id>npm-install</id>
+            <phase>initialize</phase>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <configuration>
+              <executable>npm</executable>
+              <arguments>
+                <argument>install</argument>
+              </arguments>
+            </configuration>
+          </execution>
+          <execution>
+            <id>ng-build</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <configuration>
+              <executable>npm</executable>
+              <arguments>
+                <argument>run</argument>
+                <argument>build</argument>
+              </arguments>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <configuration>
+          <outputDirectory>${project.build.directory}/classes/public/</outputDirectory>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+</project>
