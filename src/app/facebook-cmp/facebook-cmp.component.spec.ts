@@ -1,20 +1,18 @@
 /* tslint:disable:no-unused-variable */
 
-import { TestBed, async } from '@angular/core/testing';
-import { FacebookCmpComponent } from './facebook-cmp.component';
-import { FacebookService } from '../facebook.service';
+import {TestBed, async, inject} from '@angular/core/testing';
+import {FacebookCmpComponent} from './facebook-cmp.component';
+import {FacebookService} from "../services/facebook.service";
 
 describe('Component: FacebookCmp', () => {
-  beforeEach(async(() => {
+  beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [FacebookCmpComponent],
-      providers: [FacebookService]
-    })
-      .compileComponents();
-  }));
-
-  it('should create an instance', () => {
-    let component = TestBed.createComponent(FacebookCmpComponent).componentInstance;
-    expect(component).toBeTruthy();
+      providers: [{provide: FacebookService, useValue: FacebookService}]
+    });
   });
+
+  it('should create an instance', inject([FacebookService], (facebookService: FacebookService) => {
+    let component = new FacebookCmpComponent(facebookService);
+    expect(component).toBeTruthy();
+  }));
 });

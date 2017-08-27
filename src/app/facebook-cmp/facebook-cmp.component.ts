@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { FacebookService } from '../facebook.service';
+import { FacebookService } from '../services/facebook.service';
 
 @Component({
   selector: 'app-facebook-cmp',

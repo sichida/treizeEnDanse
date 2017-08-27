@@ -1,6 +1,6 @@
 import {Component, OnInit, OnDestroy} from '@angular/core';
 import {Media} from "../media-cmp/media.entity";
-import {MediaService} from "../media.service";
+import {MediaService} from "../services/media.service";
 
 @Component({
     selector: 'app-media-list',
